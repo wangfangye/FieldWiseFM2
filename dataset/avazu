@@ -1,0 +1,31 @@
+train 23+1
+id,click,hour,C1,banner_pos,site_id,site_domain,site_category,app_id,app_domain,app_category,device_id,device_ip,device_model,device_type,device_conn_type,C14,C15,C16,C17,C18,C19,C20,C21
+40428968
+划分方法 （1）8：1：1
+（2）10%测试， 剩下的其中20%做验证 NON
+（3） 移
+
+test(少了一个click)  所以不能进行测试
+id,hour,C1,banner_pos,site_id,site_domain,site_category,app_id,app_domain,app_category,device_id,device_ip,device_model,device_type,device_conn_type,C14,C15,C16,C17,C18,C19,C20,C21
+
+
+id: ID号 注意ID都不一样，所以不使用
+click: 0/1 表示未点击/点击 （除了这个 一共23个特征）
+hour: 格式为YYMMDDHH，因此14091123表示2014年9月11日UTC时间23:00。
+C1: 匿名分类变量
+banner_pos: int型，网页上的广告位置，离散特征0,1,2,3...
+site_id:Site ID
+site_domain:Site领域
+site_category: 网站类别
+app_id: string型，用户APP的ID
+app_domain
+app_category
+device_id: 设备编号
+device_ip
+device_model
+device_type: 设备类型
+device_conn_type:Device接入类型
+C14-C21 -- anonymized categorical variables
+————————————————
+版权声明：本文为CSDN博主「Avada__Kedavra」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/u014128608/article/details/93393175
